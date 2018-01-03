@@ -20,7 +20,6 @@
             else{
               $_SESSION["turni"] = 1;
             }
-            $_SESSION["mosse"]++;
             //var_dump($_POST); per verificare contenuto dell'array $_POST in modo da aggiornare in modo appropriato l'array con i valori dei tasti
             if (!empty($_POST)) { //è la prima volta nella pagina
               //non devo leggere il bottone premuto
