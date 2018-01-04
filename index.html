@@ -6,13 +6,35 @@
   <body>
     <h1>Benvenuto nel sito del gioco del tris!</h1>
       <form name="dati" action="launch.php" method="POST">
-        <label for="nome1">Nome del primo giocatore (cerchio): </label>
-        <input type="text " name="nome1" />
-        <div class = "vl"></div>
-        <label for="nome2">Nome del secondo giocatore (croce): </label>
-        <input type="text " name="nome2"/>
-        <p class = "in">Inizia sempre cerchio</p>
-        <input type="submit" name="conferma" value="conferma">
+		
+		<div class="g1">
+			<label for="nome1">Nome del primo giocatore (cerchio): </label><br><br>
+			<input type="text " name="nome1" style="margin-left: 20px;"/>
+		</div>
+	  
+	  <div class = "vl"></div>
+		
+		<div class="g2">
+			<label for="nome2">Nome del secondo giocatore (croce): </label><br><br>
+			<input type="text " name="nome2" style="margin-left: 45px;"/>
+        </div>
+		<br><br>
+		<div class="iniz">
+			<p>inizia sempre il cerchio</p>
+		</div>
+		<div class="bot">
+			<input type="submit" name="conferma" value="conferma">
+		</div>
+		
+		<div class="scelta">
+			<label for="scelta">In quale versione vuoi giocare?</label><br>
+		</div>
+		<div class="area">
+			<select name="scelta" required>
+				<option value="tris">Tris</option>
+				<option value="quatris">Quatris(tris a quattro)</option>
+			</select>
+		</div>
       </form>
   </body>
 </html>
